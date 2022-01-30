@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content%}
+<table>
+        {% for i in range(0,9) %}
+        <tr>
+            {% for j in range(0,9)%}
+            <td>
+                {{solvedlist[i][j]}}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+</table>
+
+<form action="#" method="post">
+    <button style="margin-top: 10px;" type="submit" value="back">back</button>
+</form>
+{% endblock %}

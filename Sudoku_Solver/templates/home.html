@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content%}
+<form action="#" method="post">
+<table>
+        {% for i in range(0,9) %}
+        <tr>
+            {% for j in range(0,9)%}
+            <td>
+                <input type="text" maxlength="1" name="{{i}},{{j}}">
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+</table>
+    <button style="margin-top: 10px;" type="submit" value="submit">submit</button>
+</form>
+{% endblock %}
